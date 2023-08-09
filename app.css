@@ -1,0 +1,20 @@
+/* .navbar {
+  background-color: rgb(244, 244, 31);
+  color: white;
+} */
+#output__field {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.note--card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 300px;
+  height: 250px;
+}
