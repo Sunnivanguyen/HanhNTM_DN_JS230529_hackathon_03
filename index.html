@@ -3,9 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="./app.css">
+
     <title>Advanced</title>
   </head>
   <body>
+    <header>
+      <div class="header-output_container">
+        <div>Players : <span class="players__label" id="players__counter-label"></span></div>
+        <div>Total Points : <span id="total-points__label"></span></div>
+      </div>
+      <h1>Bảng Điểm</h1>
+    </header>
+    <main >
+      <div id="players__container">
+    </div>
+    </main>
+    <footer>
+      <form action="">
+        <input type="text" placeholder="Enter a player's name" id="playername__input"/>
+        <input type="submit" value="ADD PLAYER" id="add--players__btn" ></input>
+      </form>
+    </footer>
     <script src="./app.js"></script>
   </body>
 </html>

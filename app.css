@@ -1,0 +1,149 @@
+:root {
+  --light-blue: rgb(19, 211, 211);
+  --dark-blue: rgba(9, 131, 131, 0.729);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+header,
+footer {
+  background-color: var(--light-blue);
+  height: 100px;
+}
+header {
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  position: fixed;
+  padding: 20px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  left: 0;
+  right: 0;
+  position: fixed;
+  bottom: 0;
+}
+
+.header-output_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-size: 20px;
+  color: white;
+  width: 200px;
+  align-self: center;
+  font-weight: 700;
+}
+h1 {
+  left: 45%;
+  top: 35%;
+  position: absolute;
+  color: white;
+}
+
+form {
+  width: 90%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+#playername__input {
+  width: 90%;
+  height: 40px;
+  border: 1px black solid;
+  border-radius: 5px;
+  background-color: var(--dark-blue);
+  color: white;
+  padding: 10px;
+}
+#playername__input::placeholder {
+  color: white;
+  font-size: 14px;
+}
+#add--players__btn {
+  background-color: white;
+  color: black;
+  height: 50px;
+  width: 150px;
+  border: none;
+  font-weight: 700;
+  border-radius: 5px;
+  font-size: 18px;
+}
+main {
+  position: absolute;
+  top: 100px;
+  width: 100%;
+  height: fit-content;
+  scrollbar-gutter: stable both-edges;
+}
+#players__container {
+  position: absolute;
+  width: 100%;
+  height: fit-content;
+}
+#players__container::-webkit-scrollbar {
+  width: 1em;
+}
+.player__container {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+  font-size: 24px;
+  background-color: rgb(243, 243, 243);
+  border: 1px white solid;
+}
+.control__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  position: absolute;
+  right: 0;
+  border: 1px white solid;
+}
+.control__container div {
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px white solid;
+}
+.counter__increase,
+.counter__decrease {
+  color: black;
+  background-color: rgb(211, 211, 211);
+}
+.winner {
+  color: rgba(211, 211, 48, 0.833);
+}
+.trophy-icon {
+  margin: 10px 20px;
+}
+ion-icon {
+  font-weight: 700;
+  cursor: pointer;
+}
