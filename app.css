@@ -14,6 +14,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   position: relative;
+  overflow: hidden;
 }
 
 header,
@@ -25,7 +26,6 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 100;
   position: fixed;
   padding: 20px;
 }
@@ -89,19 +89,15 @@ form {
   font-size: 18px;
 }
 main {
-  position: absolute;
-  top: 100px;
   width: 100%;
-  height: fit-content;
-  scrollbar-gutter: stable both-edges;
+  position: relative;
+  top: 100px;
+  bottom: 100px;
 }
 #players__container {
-  position: absolute;
   width: 100%;
-  height: fit-content;
-}
-#players__container::-webkit-scrollbar {
-  width: 1em;
+  overflow-y: auto;
+  height: 540px;
 }
 .player__container {
   width: 100%;
@@ -113,6 +109,7 @@ main {
   font-size: 24px;
   background-color: rgb(243, 243, 243);
   border: 1px white solid;
+  position: relative;
 }
 .control__container {
   display: flex;
@@ -138,7 +135,7 @@ main {
   background-color: rgb(211, 211, 211);
 }
 .winner {
-  color: rgba(211, 211, 48, 0.833);
+  color: rgba(222, 222, 24, 0.833);
 }
 .trophy-icon {
   margin: 10px 20px;
